@@ -79,7 +79,7 @@ function removeFromCart(item) {
   if(removeItem.includes(item)){
     console.log("Hello")
   } else {
-    return "Bye"
+    return "That item is not in your cart."
   }
 
 /*var counter = cart.length;
