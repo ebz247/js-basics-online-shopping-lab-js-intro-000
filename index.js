@@ -71,14 +71,25 @@ function total() {
 
 function removeFromCart(item) {
 
-var counter = cart.length;
+  var removeItem = [];
+  for(var i = 0; i <cart.length; i++) {
+    removeItem.push(cart[i].itemName)
+  }
+
+  if(removeItem.includes(item)){
+    console.log("Hello")
+  } else {
+    return "Bye"
+  }
+
+/*var counter = cart.length;
   while (counter >= 1) {
     if(item == cart[counter-1].itemName) {
       //cart.splice(cart[counter-1].itemName, 1)
       console.log(`${item} is in your cart`)
-    } 
+    }
     counter--;
-  }
+  }*/
 }
 
 function placeOrder(cardNumber) {
