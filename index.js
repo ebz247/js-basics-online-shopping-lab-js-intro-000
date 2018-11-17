@@ -78,20 +78,11 @@ function removeFromCart(item) {
 
   if(removeItem.includes(item)){
     var a = removeItem.indexOf(item)
-    var removed = cart.splice(cart[a].itemName, 1)
+    var removed = cart.splice(cart[a], 1)
     console.log(cart);
   } else {
     return "That item is not in your cart."
   }
-
-/*var counter = cart.length;
-  while (counter >= 1) {
-    if(item == cart[counter-1].itemName) {
-      //cart.splice(cart[counter-1].itemName, 1)
-      console.log(`${item} is in your cart`)
-    }
-    counter--;
-  }*/
 }
 
 function placeOrder(cardNumber) {
