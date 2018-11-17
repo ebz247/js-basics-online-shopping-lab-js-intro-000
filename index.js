@@ -78,8 +78,7 @@ function removeFromCart(item) {
 
   if(removeItem.includes(item)){
     var a = removeItem.indexOf(item)
-    console.log(cart[a].itemName)
-    cart.splice(cart[a].itemName, 1)
+    var removed = cart.splice(cart[a].itemName, 1)
     return cart;
   } else {
     return "That item is not in your cart."
